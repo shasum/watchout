@@ -2,7 +2,33 @@
 
 /* Note: an asteroid image is included in this repo.
 Feel free to use it if you like. */
+body {
+  background: url(assets/stars.jpg);
+  background-size: cover;
+}
+
+.scoreboard {
+  color: white;
+}
 
 .player
 
-.enemy
+
+
+.enemy {
+  /* animation-duration: 2s; */
+  /* animation-name: spin; */
+}
+
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(359deg);}
+}
+
+@keyframes oscillate {
+  0% {transform: translateX(0px);}
+  25% {transform: translateX(5px);}
+  50% {transform: translateX(0px);}
+  75% {transform: translateX(-5px);}
+  100% {transform: translateX(0px);}
+}
